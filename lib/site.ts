@@ -24,14 +24,14 @@ export const siteConfig = {
     postalCode: "C1428",
   },
   geo: {
-    latitude: -34.5634,
-    longitude: -58.4567,
+    latitude: -34.5605171,
+    longitude: -58.4647995,
   },
   phone: "+541144722965",
   phoneDisplay: "011 4472-2965",
   instagram: "https://www.instagram.com/yucca.cafeteria/",
   googlePlaceId: "ChIJqbjYGC-3vJWoliVeN5k0XA",
-  googleMapsUrl: "https://www.google.com/maps/place/?q=place_id:ChIJqbjYGC-3vJWoliVeN5k0XA",
+  googleMapsUrl: "https://maps.app.goo.gl/ZF8CX1xdmGxjTHQB6",
   openingHours: [
     { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "07:30", closes: "20:30" },
     { days: ["Saturday", "Sunday"], opens: "09:00", closes: "20:30" },

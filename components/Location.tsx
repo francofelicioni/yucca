@@ -6,6 +6,7 @@ import {
   Vegan,
   Wifi,
 } from "@/components/BrandIcons";
+import { siteConfig } from "@/lib/site";
 
 const hours = [
   { days: "Lunes — Viernes", time: "7:30 — 20:30 hs" },
@@ -22,8 +23,6 @@ const amenities = [
   { icon: CoffeeCup, label: "Café de Especialidad" },
   { icon: Parking, label: "Estacionamiento cerca" },
 ];
-
-const PLACE_ID = "ChIJqbjYGC-3vJWoliVeN5k0XA";
 
 export default function Location() {
   return (
@@ -47,7 +46,7 @@ export default function Location() {
               <p className="font-serif text-2xl text-dark mb-1">Av. Cramer 2547</p>
               <p className="font-sans text-gray-500">Belgrano, Ciudad Autónoma de Buenos Aires</p>
               <a
-                href={`https://www.google.com/maps/place/?q=place_id:${PLACE_ID}`}
+                href={siteConfig.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 mt-3 font-sans text-sm text-primary hover:text-primary-dark transition-colors"
@@ -110,7 +109,7 @@ export default function Location() {
           <div className="reveal">
             <div className="rounded-2xl overflow-hidden shadow-md h-96 md:h-full min-h-80">
               <iframe
-                src="https://maps.google.com/maps?q=Av.+Cramer+2547,+Belgrano,+Buenos+Aires&output=embed"
+                src={`https://maps.google.com/maps?q=${siteConfig.geo.latitude},${siteConfig.geo.longitude}&z=17&output=embed`}
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: "320px" }}
